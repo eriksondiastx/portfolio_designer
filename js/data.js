@@ -58,12 +58,12 @@ const portfolioData = {
             project: "Professor de Artes Plásticas",
             description: "Responsável pela criação e pós instrução aos alunos, do passo a passo para o desenvolvimento da criatividade, desde a teoria por tras das cores, até aos projectos reais",
             gallery: [
-                { url: "assets/images/experience/StAndrews/StAndrews-01.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
-                { url: "assets/images/experience/StAndrews/StAndrews-02.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
-                { url: "assets/images/experience/StAndrews/StAndrews-03.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
-                { url: "assets/images/experience/StAndrews/StAndrews-04.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
-                { url: "assets/images/experience/StAndrews/StAndrews-06.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
-                { url: "assets/images/experience/StAndrews/StAndrews-07.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
+                { url: "assets/images/experience/StAndrews/StAndrews1.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
+                { url: "assets/images/experience/StAndrews/StAndrews2.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
+                { url: "assets/images/experience/StAndrews/StAndrews3.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
+                { url: "assets/images/experience/StAndrews/StAndrews4.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
+                { url: "assets/images/experience/StAndrews/StAndrews6.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
+                { url: "assets/images/experience/StAndrews/StAndrews7.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
             ]
         }
     ],
