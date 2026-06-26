@@ -54,11 +54,16 @@ const portfolioData = {
         },
         {
             id: "exp2",
-            company: "Projetos Independentes",
-            project: "Freelance",
-            description: "Fornecimento de soluções estéticas de ponta e sob medida, englobando a área de UI/UX, gráficos impressos e marketing de mídia digital.",
+            company: "St. Andrews English School",
+            project: "Professor de Artes Plásticas",
+            description: "Responsável pela criação e pós instrução aos alunos, do passo a passo para o desenvolvimento da criatividade, desde a teoria por tras das cores, até aos projectos reais",
             gallery: [
-                { url: "https://placehold.co/600x400/1f2937/fff?text=App+Mobile", title: "Design de Interface", description: "App de finanças com foco na experiência do usuário." }
+                { url: "assets/images/experience/StAndrews/StAndrews-01.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
+                { url: "assets/images/experience/StAndrews/StAndrews-02.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
+                { url: "assets/images/experience/StAndrews/StAndrews-03.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
+                { url: "assets/images/experience/StAndrews/StAndrews-04.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
+                { url: "assets/images/experience/StAndrews/StAndrews-06.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
+                { url: "assets/images/experience/StAndrews/StAndrews-07.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." }
             ]
         }
     ],
