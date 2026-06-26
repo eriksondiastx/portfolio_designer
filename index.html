@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags SEO Básicas -->
+    <meta name="description"
+        content="Portfólio de Design Gráfico - Projetos criativos e identidades visuais impactantes.">
+    <title>Designer Gráfico - Portfólio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Specific Landing Page Styles that might not be in style.css generic components */
+        .hero-pattern {
+            background-image: radial-gradient(var(--text-muted) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.1;
+        }
+
+        /* Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .typewriter-text {
+            border-right: 2px solid var(--accent);
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blinkCursor 0.75s step-end infinite;
+        }
+
+        @keyframes blinkCursor {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: var(--accent);
+            }
+        }
+
+        /* Blob Animation */
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.5;
+            animation: moveBlob 10s infinite alternate linear;
+        }
+
+        @keyframes moveBlob {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(50px, -50px) scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 text-gray-200 antialiased overflow-x-hidden relative">
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle"
+        class="fixed top-6 right-6 z-50 glass w-12 h-12 rounded-full flex items-center justify-center text-xl hover:scale-110 transition-transform">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 glass transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-space font-bold text-2xl tracking-tighter" id="navLogo">JD<span
+                    class="text-blue-500">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-blue-500 transition-colors">Home</a>
+                <a href="#about" class="hover:text-blue-500 transition-colors">Sobre</a>
+                <a href="#portfolio" class="hover:text-blue-500 transition-colors">Trabalhos</a>
+                <a href="#experience" class="hover:text-blue-500 transition-colors">Experiência</a>
+                <a href="#contact"
+                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full transition-colors">Contato</a>
+            </div>
+            <!-- Mobile Menu Btn -->
+            <button class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- ====== 1. Hero Section ====== -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative pt-20">
+        <!-- Background Animations -->
+        <div class="absolute inset-0 hero-pattern pointer-events-none"></div>
+        <div class="blob bg-blue-600 w-96 h-96 rounded-full top-20 left-10"></div>
+        <div class="blob bg-purple-600 w-80 h-80 rounded-full bottom-20 right-10"
+            style="animation-duration: 15s; animation-direction: alternate-reverse;"></div>
+
+        <div class="container mx-auto px-6 text-center z-10 relative reveal">
+            <h2 class="text-blue-500 font-medium tracking-widest uppercase mb-4 text-sm md:text-base inline-block px-4 py-1 border border-blue-500/30 rounded-full glass"
+                id="heroSpecialtyText">Loading...</h2>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black font-space mb-6 tracking-tighter mix-blend-difference"
+                id="heroNameText">
+                <!-- Injetado via JS -->
+            </h1>
+
+            <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-10 h-10 typewriter-text w-max"
+                id="heroPhraseText">
+                <!-- Injetado via JS -->
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#portfolio"
+                    class="px-8 py-4 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform w-full sm:w-auto text-center">
+                    Ver Projetos <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#contact"
+                    class="px-8 py-4 glass text-white font-bold rounded-full hover:bg-white/10 transition-colors w-full sm:w-auto text-center">
+                    Vamos Conversar
+                </a>
+            </div>
+
+            <!-- Redes Sociais no Hero -->
+            <div class="mt-16 flex gap-6 justify-center text-xl text-gray-500" id="heroSocialLinks">
+                <!-- Injetado via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 2. Sobre Mim ====== -->
+    <section id="about" class="py-24 relative">
+        <div class="container mx-auto px-6 reveal">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <!-- Image/Avatar -->
+                <div class="w-full lg:w-5/12 relative group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500">
+                    </div>
+                    <img id="aboutImage" src="" alt="Designer Profile"
+                        class="relative z-10 w-full rounded-2xl grayscale group-hover:grayscale-0 transition-all duration-500 object-cover aspect-[4/5] bg-gray-900 border border-gray-800"
+                        onerror="this.src='https://placehold.co/400x500/1f2937/fff?text=Photo'">
+                </div>
+
+                <!-- Bio Content -->
+                <div class="w-full lg:w-7/12">
+                    <h2 class="text-4xl md:text-5xl font-bold font-space mb-2">Muito prazer, sou <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
+                            id="aboutNameFirst">Designer</span></h2>
+                    <p class="text-xl text-gray-400 mb-8 font-light" id="aboutStyleText">Estilo: Loading...</p>
+
+                    <div class="text-gray-300 text-lg leading-relaxed space-y-4 mb-8" id="aboutBioText">
+                        <!-- Injetado via JS -->
+                    </div>
+
+                    <h3 class="text-2xl font-bold font-space mb-4 border-b border-gray-800 pb-2">O que me destaca</h3>
+                    <div class="flex flex-wrap gap-3" id="aboutSoftSkills">
+                        <!-- Injetado via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 3. Portfólio ====== -->
+    <section id="portfolio" class="py-24 bg-gray-900/50 relative">
+        <div class="container mx-auto px-6 reveal">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold font-space text-blue-500 tracking-[0.2em] uppercase mb-2">Trabalhos em
+                    Destaque</h2>
+                <h3 class="text-4xl md:text-5xl font-black font-space mb-6">Criando com Propósito</h3>
+
+                <!-- Filters -->
+                <div class="flex flex-wrap justify-center gap-3 mt-8" id="portfolioFilters">
+                    <button
+                        class="filter-btn active px-5 py-2 rounded-full text-sm font-medium bg-white text-black transition-colors"
+                        data-filter="all">Todos</button>
+                    <!-- Injetado via JS -->
+                </div>
+            </div>
+
+            <!-- Grid Masonry -->
+            <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6" id="portfolioGrid">
+                <!-- Injetado via JS -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ====== 4. Experiência e Formação ====== -->
+    <section id="experience" class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Timeline de Experiência -->
+                <div class="reveal">
+                    <h3 class="text-3xl font-bold font-space mb-10 flex items-center gap-4"><i
+                            class="fa-solid fa-briefcase text-blue-500"></i> Trajetória Profissional</h3>
+                    <div class="relative border-l border-gray-800 ml-4 space-y-12" id="expContainer">
+                        <!-- Injetado via JS -->
+                    </div>
+                </div>
+
+                <!-- Formação -->
+                <div class="reveal">
+                    <h3 class="text-3xl font-bold font-space mb-10 flex items-center gap-4"><i
+                            class="fa-solid fa-graduation-cap text-purple-500"></i> Formação Acadêmica</h3>
+                    <div class="space-y-6" id="eduContainer">
+                        <!-- Injetado via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 5. Skills ====== -->
+    <section id="skills" class="py-24 bg-gray-900/50 relative overflow-hidden">
+        <div class="absolute right-0 top-0 blob bg-blue-600/20 w-[500px] h-[500px] rounded-full mix-blend-screen"></div>
+        <div class="container mx-auto px-6 reveal relative z-10">
+            <h3 class="text-4xl font-bold font-space mb-12 text-center">Toolkit Criativo</h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="skillsContainer">
+                <!-- Injetado via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 6. Contato ====== -->
+    <section id="contact" class="py-24 mb-10">
+        <div class="container mx-auto px-6 reveal">
+            <div class="glass max-w-4xl mx-auto rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <div class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                </div>
+
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl md:text-6xl font-black font-space mb-4 tracking-tighter">Vamos criar algo
+                        incrível?</h2>
+                    <p class="text-gray-400 text-lg">Estou disponível para projetos freelance e novas oportunidades.</p>
+                </div>
+
+                <form class="space-y-6 max-w-2xl mx-auto"
+                    onsubmit="event.preventDefault(); window.location.href='mailto:eriksondiastx@gmail.com';">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Seu Nome</label>
+                            <input type="text"
+                                class="w-full bg-gray-950/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                                required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Seu Email</label>
+                            <input type="email"
+                                class="w-full bg-gray-950/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                                required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Mensagem</label>
+                        <textarea rows="4"
+                            class="w-full bg-gray-950/50 border border-gray-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                            required></textarea>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <button type="submit"
+                            class="flex-1 px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-transform transform hover:-translate-y-1">
+                            Enviar Email <i class="fa-solid fa-envelope ml-2"></i>
+                        </button>
+                        <a href="https://wa.me/244949100325" target="_blank"
+                            class="px-8 py-4 bg-[#25D366] text-white font-bold rounded-xl hover:bg-[#20bd5a] transition-transform transform hover:-translate-y-1 text-center flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp text-xl mr-2"></i> WhatsApp
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== 7. Footer ====== -->
+    <footer class="border-t border-gray-800 pt-12 pb-8 text-center bg-gray-950">
+        <div class="container mx-auto px-6">
+            <div class="font-space font-bold text-3xl mb-6 flex justify-center items-center">
+                ET<span class="text-blue-500">.</span>
+            </div>
+            <div class="flex justify-center gap-6 mb-8 text-xl" id="footerSocialLinks">
+                <!-- Mesmos links sociais do hero -->
+            </div>
+            <p class="text-gray-500 text-sm">© 2024 Portfólio Designer Gráfico. Desenvolvido por Txart.</p>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+/* Reset & Variables */
+:root {
+    --bg-dark: #0a0a0a;
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+    --accent: #3b82f6; /* Will be overridden by active color themes */
+    --accent-hover: #2563eb;
+    
+    /* Neon Colors */
+    --neon-blue: #00f3ff;
+    --neon-pink: #ff00ea;
+    --neon-purple: #9d00ff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body.light-mode {
+    --bg-dark: #f9fafb;
+    --text-main: #111827;
+    --text-muted: #4b5563;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark); 
+}
+::-webkit-scrollbar-thumb {
+    background: #4b5563; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent); 
+}
+
+/* Base Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.light-mode .glass {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Input Styles for Admin */
+.admin-input {
+    width: 100%;
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.admin-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.admin-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #9ca3af;
+    margin-bottom: 0.25rem;
+}
+
+.admin-btn {
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.admin-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.admin-card {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Toast Notification */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.toast.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+.toast.success { background-color: #16a34a; }
+.toast.error { background-color: #dc2626; }
