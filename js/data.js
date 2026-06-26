@@ -42,9 +42,9 @@ const portfolioData = {
             description: "Foco principal em gerenciar o visual e planejamento de múltiplas identidades visuais e projetos publicitários desde a aprovação até a entrega final.",
             gallery: [
                 { url: "assets/images/experience/txart/txart1.jpg", title: "Design do Logotipo da Marca TXART", description: "Participação na criação do Imagotipo da marca TXART, bem  de toda identidade visual da mesma" },
-                { url: "assets/images/experience/txart/txart3.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." }
-                { url: "assets/images/experience/txart/txart4.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." }
-                { url: "assets/images/experience/txart/txart8.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." }
+                { url: "assets/images/experience/txart/txart3.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
+                { url: "assets/images/experience/txart/txart4.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
+                { url: "assets/images/experience/txart/txart8.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
             ]
         },
         {
