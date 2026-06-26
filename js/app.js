@@ -183,9 +183,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let galleryHTML = '';
         if (exp.gallery && exp.gallery.length > 0) {
             galleryHTML = `<div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">`;
-            exp.gallery.forEach(img => {
+            exp.gallery.forEach((img, idx) => {
                 galleryHTML += `
-                    <div class="group/gallery relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700">
+                    <div class="group/gallery relative overflow-hidden rounded-xl bg-gray-800 border border-gray-700 cursor-pointer" onclick="openExperienceLightbox('${exp.id}', ${idx})">
                         <img src="${img.url}" alt="${img.title}" class="w-full h-40 object-cover transform group-hover/gallery:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/1f2937/fff?text=Image'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover/gallery:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                             <h5 class="text-white font-bold text-sm mb-1">${img.title}</h5>
@@ -317,6 +317,89 @@ function closeLightbox() {
         lightbox.classList.remove('opacity-100');
         document.getElementById('lightboxContent').classList.add('scale-95');
         document.getElementById('lightboxContent').classList.remove('scale-100');
+        
+        setTimeout(() => {
+            lightbox.classList.add('pointer-events-none');
+            document.body.style.overflow = '';
+        }, 300);
+    }
+}
+
+// Funções de Lightbox para Experiência
+function openExperienceLightbox(expId, imgIdx) {
+    const data = portfolioData;
+    const exp = data.experience.find(e => e.id === expId);
+    if (!exp || !exp.gallery || !exp.gallery[imgIdx]) return;
+    const img = exp.gallery[imgIdx];
+    const totalImgs = exp.gallery.length;
+    
+    let lightbox = document.getElementById('experienceLightbox');
+    if (!lightbox) {
+        lightbox = document.createElement('div');
+        lightbox.id = 'experienceLightbox';
+        lightbox.className = 'fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 lg:p-12 opacity-0 transition-opacity duration-300 pointer-events-none';
+        document.body.appendChild(lightbox);
+    }
+    
+    // Botões de Navegação (se houver mais de uma imagem)
+    let navButtons = '';
+    if (totalImgs > 1) {
+        const prevIdx = (imgIdx - 1 + totalImgs) % totalImgs;
+        const nextIdx = (imgIdx + 1) % totalImgs;
+        navButtons = `
+            <button onclick="openExperienceLightbox('${expId}', ${prevIdx})" class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-blue-500 text-3xl bg-black/50 hover:bg-black/80 w-12 h-12 rounded-full flex items-center justify-center transition-all z-50">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="openExperienceLightbox('${expId}', ${nextIdx})" class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-blue-500 text-3xl bg-black/50 hover:bg-black/80 w-12 h-12 rounded-full flex items-center justify-center transition-all z-50">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        `;
+    }
+    
+    lightbox.innerHTML = `
+        <button onclick="closeExperienceLightbox()" class="absolute top-6 right-6 text-white text-4xl hover:text-blue-500 transition-colors z-50"><i class="fa-solid fa-xmark"></i></button>
+        ${navButtons}
+        <div class="max-w-6xl w-full mx-auto relative transform scale-95 transition-transform duration-300" id="experienceLightboxContent">
+            <div class="flex flex-col lg:flex-row gap-8 items-center h-full">
+                <div class="w-full lg:w-2/3 h-[50vh] lg:h-[80vh] flex items-center justify-center bg-gray-900/50 rounded-2xl overflow-hidden p-2 relative">
+                    <img src="${img.url}" class="max-h-full max-w-full object-contain drop-shadow-2xl" alt="${img.title}" onerror="this.src='https://placehold.co/1000x800/1f2937/fff?text=Image'">
+                    ${totalImgs > 1 ? `
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 px-4 py-1.5 rounded-full text-xs font-semibold text-gray-300 border border-gray-800">
+                        ${imgIdx + 1} / ${totalImgs}
+                    </div>
+                    ` : ''}
+                </div>
+                <div class="w-full lg:w-1/3 text-white">
+                    <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-blue-500/30">${exp.company}</span>
+                    <h4 class="text-purple-400 text-sm font-semibold tracking-wide uppercase mb-1">${exp.project}</h4>
+                    <h3 class="text-4xl md:text-5xl font-black font-space mb-4 leading-tight">${img.title}</h3>
+                    <p class="text-gray-300 mb-8 text-lg leading-relaxed">${img.description}</p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    lightbox.classList.remove('pointer-events-none');
+    requestAnimationFrame(() => {
+        lightbox.classList.add('opacity-100');
+        const content = document.getElementById('experienceLightboxContent');
+        if (content) {
+            content.classList.remove('scale-95');
+            content.classList.add('scale-100');
+        }
+    });
+    document.body.style.overflow = 'hidden';
+}
+
+function closeExperienceLightbox() {
+    const lightbox = document.getElementById('experienceLightbox');
+    if(lightbox) {
+        lightbox.classList.remove('opacity-100');
+        const content = document.getElementById('experienceLightboxContent');
+        if (content) {
+            content.classList.add('scale-95');
+            content.classList.remove('scale-100');
+        }
         
         setTimeout(() => {
             lightbox.classList.add('pointer-events-none');
