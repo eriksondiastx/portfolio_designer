@@ -246,7 +246,34 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     });
 
-    // 10. Links do Footer (Cópia do Hero)
+    // 10. Renderizar Idiomas
+    if (data.languages && data.languages.length > 0) {
+        const langContainer = document.getElementById('languagesContainer');
+        if (langContainer) {
+            langContainer.innerHTML = '';
+            data.languages.forEach(lang => {
+                langContainer.innerHTML += `
+                    <div class="bg-gray-800/50 border border-gray-800 p-5 rounded-2xl hover:bg-gray-800 transition-colors group">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">${lang.flag}</span>
+                                <div>
+                                    <h4 class="text-white font-semibold">${lang.name}</h4>
+                                    <span class="text-xs text-blue-400 font-medium">${lang.level}</span>
+                                </div>
+                            </div>
+                            <span class="text-sm font-bold text-gray-400">${lang.percent}%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                            <div class="h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-1000" style="width: ${lang.percent}%"></div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+    }
+
+    // 11. Links do Footer (Cópia do Hero)
     document.getElementById('footerSocialLinks').innerHTML = socialLinks.innerHTML;
 
     // 11. Navbar Blur on Scroll

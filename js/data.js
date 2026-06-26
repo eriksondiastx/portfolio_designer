@@ -75,6 +75,15 @@ const portfolioData = {
                 { url: "assets/images/experience/siafrica/siafrica-rebrand.png", title: "Rebranding", description: "Ainda em nome da TXART, participei do rebranding da empresa Siáfrica Lda" },
                 { url: "assets/images/experience/siafrica/siafrica2.jpg", title: "Rebranding", description: "Criação do design para passes de funcionários da empresa" },
                 { url: "assets/images/experience/siafrica/siafrica3.jpg", title: "Rebranding", description: "Ainda em nome da TXART, participei do rebranding da empresa Siáfrica Lda" },
+                { url: "assets/images/experience/siafrica/siafrica4.png", title: "Rebranding", description: "Criação e impressão dos passes de funcionários da SIÁFRICA Lda, após ingressar na mesma como Coordenador de Tecnologia de Informação e Comunicação" },
+                { url: "assets/images/experience/siafrica/siafrica5.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para redes sociais da empresa" },
+                { url: "assets/images/experience/siafrica/siafrica6.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para redes sociais da empresa" },
+                { url: "assets/images/experience/siafrica/siafrica7.png", title: "Rebranding", description: "Criação do novo modelo de cartão de visita da empresa" },
+                { url: "assets/images/experience/siafrica/siafrica8.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para a divulgação dos serviços oferecidos pela empresa." },
+                { url: "assets/images/experience/siafrica/siafrica9.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para a divulgação dos serviços oferecidos pela empresa." },
+                { url: "assets/images/experience/siafrica/siafrica10.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para a divulgação dos serviços oferecidos pela empresa." },
+                { url: "assets/images/experience/siafrica/siafrica11.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para datas comemorativas." },
+                { url: "assets/images/experience/siafrica/siafrica12.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para datas comemoratívas." },
             ]
         }
     ],
@@ -93,6 +102,10 @@ const portfolioData = {
         { id: "s3", name: "Figma", level: 60 },
         { id: "s3", name: "Affinity", level: 50 },
         { id: "s4", name: "Adobe Premiere Pro", level: 80 }
+    ],
+    languages: [
+        { id: "lang1", name: "Português", level: "Nativo", percent: 100, flag: "🇦🇴" },
+        { id: "lang2", name: "Inglês", level: "Intermediário", percent: 55, flag: "🇬🇧" }
     ],
     testimonials: [
         {
