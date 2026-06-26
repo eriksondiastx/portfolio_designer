@@ -65,6 +65,17 @@ const portfolioData = {
                 { url: "assets/images/experience/StAndrews/StAndrews6.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
                 { url: "assets/images/experience/StAndrews/StAndrews7.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
             ]
+        },
+        {
+            id: "exp3",
+            company: "Siáfrica Lda",
+            project: "Coordenador de Tecnologia de Informação e Comunicação",
+            description: "Sendo o único colaborador da área, sou o responável pela criação de todo o conteúdo visual, bem como a gestão das Midias Sociais e Website corporativo da Empresa.",
+            gallery: [
+                { url: "assets/images/experience/siafrica/siafrica-rebrand.png", title: "Rebranding", description: "Ainda em nome da TXART, participei do rebranding da empresa Siáfrica Lda" },
+                { url: "assets/images/experience/siafrica/siafrica2.jpg", title: "Rebranding", description: "Criação do design para passes de funcionários da empresa" },
+                { url: "assets/images/experience/siafrica/siafrica3.jpg", title: "Rebranding", description: "Ainda em nome da TXART, participei do rebranding da empresa Siáfrica Lda" },
+            ]
         }
     ],
     education: [
