@@ -14,10 +14,10 @@ const portfolioData = {
     portfolio: [
         {
             id: "proj1",
-            name: "Identidade Visual Neon",
-            category: "branding",
-            description: "Uma identidade visual completa para uma startup moderna, incluindo concepção de logotipo, tipografia, paleta de cores e diretrizes aplicadas da marca.",
-            imageUrl: "assets/mockups/mockup-1.jpg"
+            name: "Desenvolvimento da página Web ANSMAN",
+            category: "UI/UX",
+            description: "Elaboração do design visual completa para a página web da empresa ANSMAN, bem como a manutenção da mesma - www.ansman.net",
+            imageUrl: "assets/images/experience/ansman/ansman01.png"
         },
         {
             id: "proj2",
@@ -41,7 +41,7 @@ const portfolioData = {
             project: "Direção de Arte e Design",
             description: "Foco principal em gerenciar o visual e planejamento de múltiplas identidades visuais e projetos publicitários desde a aprovação até a entrega final.",
             gallery: [
-                { url: "https://placehold.co/600x400/1f2937/fff?text=Campanha+1", title: "Campanha de Lançamento", description: "Criação de identidade visual e peças publicitárias." },
+                { url: "assets/images/experience/txart/txart1.jpg", title: "Campanha de Lançamento", description: "Criação de identidade visual e peças publicitárias." },
                 { url: "https://placehold.co/600x400/1f2937/fff?text=Campanha+2", title: "Rebranding corporativo", description: "Modernização da marca mantendo a essência original." }
             ]
         },
