@@ -100,8 +100,9 @@ const portfolioData = {
         { id: "s1", name: "Photoshop", level: 80 },
         { id: "s2", name: "Illustrator", level: 65 },
         { id: "s3", name: "Figma", level: 60 },
-        { id: "s3", name: "Affinity", level: 50 },
-        { id: "s4", name: "Adobe Premiere Pro", level: 80 }
+        { id: "s4", name: "Affinity", level: 50 },
+        { id: "s5", name: "Adobe Premiere Pro", level: 80 },
+        { id: "s6", name: "Eng. de Prompt IA", level: 85 }
     ],
     languages: [
         { id: "lang1", name: "Português", level: "Nativo", percent: 100, flag: "🇦🇴" },

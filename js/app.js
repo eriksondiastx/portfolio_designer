@@ -236,12 +236,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const sortedSkills = [...data.skills].sort((a, b) => b.level - a.level);
     
     sortedSkills.forEach(skill => {
+        const isAI = skill.id === 's6';
         skillsContainer.innerHTML += `
-            <div class="bg-gray-800/50 border border-gray-800 p-6 rounded-2xl text-center group hover:bg-gray-800 transition-colors">
-                <div class="w-16 h-16 mx-auto bg-gray-900 rounded-full flex items-center justify-center mb-4 border border-gray-700 group-hover:border-blue-500 transition-colors">
-                    <span class="text-xl font-bold text-blue-500">${skill.level}%</span>
+            <div class="${isAI
+                ? 'bg-gradient-to-br from-purple-900/60 to-blue-900/60 border border-purple-500/40 p-6 rounded-2xl text-center group hover:from-purple-900/80 hover:to-blue-900/80 transition-all relative overflow-hidden'
+                : 'bg-gray-800/50 border border-gray-800 p-6 rounded-2xl text-center group hover:bg-gray-800 transition-colors'}">
+                ${isAI ? '<div class="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>' : ''}
+                <div class="w-16 h-16 mx-auto ${isAI ? 'bg-purple-900/80 border-purple-500/60' : 'bg-gray-900 border-gray-700 group-hover:border-blue-500'} rounded-full flex items-center justify-center mb-4 border transition-colors">
+                    ${isAI
+                        ? '<i class="fa-solid fa-robot text-2xl text-purple-400"></i>'
+                        : `<span class="text-xl font-bold text-blue-500">${skill.level}%</span>`}
                 </div>
-                <h4 class="text-white font-medium">${skill.name}</h4>
+                <h4 class="text-white font-medium ${isAI ? 'text-purple-200' : ''}">${skill.name}</h4>
+                ${isAI ? `<span class="text-xs text-purple-400 font-semibold mt-1 block">${skill.level}%</span>` : ''}
             </div>
         `;
     });
