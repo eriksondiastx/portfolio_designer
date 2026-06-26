@@ -45,6 +45,10 @@ const portfolioData = {
                 { url: "assets/images/experience/txart/txart3.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
                 { url: "assets/images/experience/txart/txart4.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
                 { url: "assets/images/experience/txart/txart8.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
+                { url: "assets/images/experience/txart/txart10.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
+                { url: "assets/images/experience/txart/txart11.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
+                { url: "assets/images/experience/txart/txart12.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
+                { url: "assets/images/experience/txart/txart13.jpg", title: "Arte para Tereiros", description: "Criação de arte publicitária para redes sociais em nome da marca TXART." },
             ]
         },
         {
