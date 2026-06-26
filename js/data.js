@@ -45,6 +45,7 @@ const portfolioData = {
                 { url: "assets/images/experience/txart/txart3.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
                 { url: "assets/images/experience/txart/txart4.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
                 { url: "assets/images/experience/txart/txart8.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
+                { url: "assets/images/experience/txart/txart7.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
                 { url: "assets/images/experience/txart/txart10.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
                 { url: "assets/images/experience/txart/txart11.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
                 { url: "assets/images/experience/txart/txart12.jpg", title: "Gestão de Social Midia", description: "Responsável pela criação e gestão de conteúdo para as redes sociais da marca." },
@@ -64,10 +65,10 @@ const portfolioData = {
     education: [
         {
             id: "edu1",
-            courseName: "Formação em Design Gráfico",
-            institution: "Instituto de Design Artístico",
-            year: "2018 - 2021",
-            certificateUrl: "assets/certificates/cert-1.pdf"
+            courseName: "Formação em Engenharia Informática",
+            institution: "Universidade Técnica de Angola - UTANGA",
+            year: "2016 - 2020",
+            certificateUrl: "assets/certificates/1º Curricuculum  Vitae Erikson 06_26_Designer.pdf"
         }
     ],
     skills: [
