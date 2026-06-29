@@ -54,16 +54,23 @@ const portfolioData = {
         },
         {
             id: "exp2",
-            company: "St. Andrews English School",
-            project: "Professor de Artes Plásticas",
-            description: "Responsável pela criação e pós instrução aos alunos, do passo a passo para o desenvolvimento da criatividade, desde a teoria por tras das cores, até aos projectos reais",
+            company: "Freelancer",
+            project: "Cartão de Visita",
+            description: "Trabalho tercerizado para o grupo Geração Promissora. Foi refeito o logotipo, criação de design para cartão de visita e mockups",
             gallery: [
-                { url: "assets/images/experience/StAndrews/StAndrews1.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
-                { url: "assets/images/experience/StAndrews/StAndrews2.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
-                { url: "assets/images/experience/StAndrews/StAndrews3.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
-                { url: "assets/images/experience/StAndrews/StAndrews4.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
-                { url: "assets/images/experience/StAndrews/StAndrews6.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
-                { url: "assets/images/experience/StAndrews/StAndrews7.jpg", title: "Artes Plásticas", description: "Ministrando aulas de artes plásticas para o ensino primário." },
+                { url: "assets/images/experience/geracao_promissora/logo.png", title: "Imagotipo", description: "Redesign do imagotipo do grupo" },
+                { url: "assets/images/experience/geracao_promissora/logo2.png", title: "Imagotipo", description: "Redesign do imagotipo e criação de alternativos mediante a pelleta de cores." },
+                { url: "assets/images/experience/geracao_promissora/logo3.png", title: "Imagotipo", description: "Redesign do imagotipo e criação de alternativos mediante a pelleta de cores." },
+                { url: "assets/images/experience/geracao_promissora/gp1.png", title: "Cartão de Visita", description: "Criação do design para modelo de cartão de visita." },
+                { url: "assets/images/experience/geracao_promissora/gp2.png", title: "Cartão de Visita", description: "Variante de modelo de cartão de visita mediante palleta de cores." },
+                { url: "assets/images/experience/geracao_promissora/gp3.png", title: "Cartão de Visita", description: "Variante de modelo de cartão de visita mediante palleta de cores." },
+                { url: "assets/images/experience/geracao_promissora/gp4.png", title: "Cartão de Visita", description: "Variante de modelo de cartão de visita mediante palleta de cores." },
+                { url: "assets/images/experience/geracao_promissora/gp5.png", title: "Cartão de Visita", description: "Variante de modelo de cartão de visita mediante palleta de cores." },
+                { url: "assets/images/experience/geracao_promissora/Copo1.png", title: "Mockup", description: "Mockup de Caneca." },
+                { url: "assets/images/experience/geracao_promissora/Copo2.png", title: "Mockup", description: "Mockup de Caneca." },
+                { url: "assets/images/experience/geracao_promissora/Colete2.png", title: "Mockup", description: "Mockup de Coletes." },
+                { url: "assets/images/experience/geracao_promissora/Colete3.png", title: "Mockup", description: "Mockup de Coletes." },
+                { url: "assets/images/experience/geracao_promissora/Colete4.png", title: "Mockup", description: "Mockup de Coletes." },
             ]
         },
         {
@@ -84,6 +91,10 @@ const portfolioData = {
                 { url: "assets/images/experience/siafrica/siafrica10.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para a divulgação dos serviços oferecidos pela empresa." },
                 { url: "assets/images/experience/siafrica/siafrica11.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para datas comemorativas." },
                 { url: "assets/images/experience/siafrica/siafrica12.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para datas comemoratívas." },
+                { url: "assets/images/experience/siafrica/siafrica13.jpg", title: "Gestão de Social Midia", description: "Criação de conteúdo para datas comemoratívas." },
+                { url: "assets/images/experience/siafrica/siafrica14.png", title: "Gestão de Social Midia", description: "Criação de conteúdo para datas comemoratívas." },
+                { url: "assets/images/experience/siafrica/siafrica15.jpg", title: "Gestão de Social Midia", description: "Criação de conteúdo para datas comemoratívas." },
+                { url: "assets/images/experience/siafrica/siafrica16.png", title: "Proposta de Passe PVC", description: "Criação de proposta de design e Mockups de passe PVC." },
             ]
         }
     ],
