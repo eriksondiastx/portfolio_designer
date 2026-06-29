@@ -105,6 +105,13 @@ const portfolioData = {
             institution: "Universidade Técnica de Angola - UTANGA",
             year: "2016 - 2020",
             certificateUrl: "assets/certificates/1º Curricuculum  Vitae Erikson 06_26_Designer.pdf"
+        },
+        {
+            id: "edu2",
+            courseName: "Curso Online de Design Gráfico ",
+            institution: "Canal - Coisas de Designer",
+            year: "2024",
+            certificateUrl: "assets/certificates/#"
         }
     ],
     skills: [
@@ -113,7 +120,7 @@ const portfolioData = {
         { id: "s3", name: "Figma", level: 60 },
         { id: "s4", name: "Affinity", level: 50 },
         { id: "s5", name: "Adobe Premiere Pro", level: 80 },
-        { id: "s6", name: "Eng. de Prompt IA", level: 85 }
+        { id: "s6", name: "Engenharia de Prompt IA para design", level: 90 }
     ],
     languages: [
         { id: "lang1", name: "Português", level: "Nativo", percent: 100, flag: "🇦🇴" },
